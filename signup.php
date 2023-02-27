@@ -44,7 +44,7 @@
                     echo "<p>Something went wrong, try again!</p>";
                 // Ja nav kļumes, izmest ziņojumu ka piereģistrēšanas ir notikusi veiksmīgi
                 } else if ($_GET["error"] == "none"){
-                    echo "<p>U have successfuly signed up!</p>";
+                    echo "<p>You have successfuly signed up!</p>";
                 }
             }
             ?>

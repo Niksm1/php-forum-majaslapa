@@ -4,7 +4,7 @@
 
     // Ja lietotājs ir ielogojies, galvenajā lapas daļā lietotājs tiek pasveicināts
     if(isset($_SESSION["useruid"])){
-        echo "<h1>Hello " . $_SESSION["useruid"] . "</h1>";
+        echo "<h1>Hello " . $_SESSION["username"] . "</h1>";
     }
 
     // Tiek izmantots fails no includes/db-handler.php, lai pēctam veiktu savienojumu ar datubāzi
