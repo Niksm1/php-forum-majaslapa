@@ -1,15 +1,18 @@
 <?php
 
-
+// Pārbaude vai POST tika veikts ar nosaukumu submit
 if(isset($_POST["submit"])){
 
+    // Reģistrēšanās formas dati tiek saglabāti mainīgajos
     $name = $_POST["name"];
     $email = $_POST["email"];
     $username = $_POST["uid"];
     $pwd = $_POST["pwd"];
     $pwdConfirm = $_POST["pwdConfirm"];
 
+    // Lai savienotos ar datubāzi      
     require_once 'db-handler.php';
+    // Lai izmantoto vajadzīgās funkcijas
     require_once 'functions.php';
 
     // Error handlers
