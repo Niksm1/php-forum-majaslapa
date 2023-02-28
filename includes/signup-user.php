@@ -10,7 +10,7 @@ if(isset($_POST["submit"])){
     $pwd = $_POST["pwd"];
     $pwdConfirm = $_POST["pwdConfirm"];
 
-    // Lai savienotos ar datubāzi      
+    // Lai savienotos ar datubāzi  
     require_once 'db-handler.php';
     // Lai izmantoto vajadzīgās funkcijas
     require_once 'functions.php';
@@ -37,6 +37,7 @@ if(isset($_POST["submit"])){
         exit();
     }
 
+    // Funkcija kas pievieno lietotāju datubāzei
     createUser($conn, $name, $email, $username, $pwd);
 
 } else {
